@@ -16,7 +16,9 @@ nav {
 }
 
 .logo {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  overflow: hidden;
+  color: #333;
 }
 
 .hero-section {
