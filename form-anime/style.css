@@ -18,6 +18,7 @@ body {
 }
 
 form {
+  position: relative;
   display: flex;
   min-height: 40vh;
   width: 40vw;
@@ -35,6 +36,10 @@ form {
   color: #6190e8;
 }
 
+.description {
+  color: #777;
+  font-size: 2.2rem;
+}
 .contact-right,
 .contact-left {
   flex: 1;
@@ -56,7 +61,7 @@ form {
   border: none;
   outline: none;
   color: #777474;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
 }
 
 .input-container {
@@ -68,7 +73,7 @@ form {
   z-index: 1;
   pointer-events: none;
   padding: 0.3rem 0;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   transform-origin: left;
 }
 
@@ -80,8 +85,8 @@ form {
 }
 
 .checkbox-label {
-  font-size: 0.9rem;
-  padding: 0 2rem;
+  font-size: 1.2rem;
+  padding: 0 1rem;
 }
 
 .promo-container {
@@ -92,8 +97,8 @@ form {
 
 .checkbox-container {
   position: relative;
-  height: 1.2rem;
-  width: 1.2rem;
+  height: 1.5rem;
+  width: 1.5rem;
   overflow: hidden;
   border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -105,6 +110,7 @@ form {
 .checkbox {
   opacity: 0;
   cursor: pointer;
+  z-index: 3;
 }
 
 .checkmark,
@@ -153,4 +159,39 @@ button {
   -moz-border-radius: 0.2rem;
   -ms-border-radius: 0.2rem;
   -o-border-radius: 0.2rem;
+}
+
+/* Character svg */
+
+#character {
+  position: absolute;
+  transform: scale(0.6) translate(0%, 30%);
+  -webkit-transform: scale(0.6) translate(0%, 30%);
+  -moz-transform: scale(0.6) translate(0%, 30%);
+  -ms-transform: scale(0.6) translate(0%, 30%);
+  -o-transform: scale(0.6) translate(0%, 30%);
+  transform-origin: bottom;
+  bottom: 0;
+  left: 0;
+}
+
+.submitted {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  form {
+    height: 80vh;
+    width: 90vw;
+    flex-direction: column;
+  }
 }
