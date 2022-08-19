@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #6190e8, #a7bfd8);
+}
+
+form {
+  display: flex;
+  min-height: 40vh;
+  width: 40vw;
+  background-color: #fff;
+  color: #777;
+  padding: 3rem 5rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.title {
+  color: #6190e8;
+}
+
+.contact-right,
+.contact-left {
+  flex: 1;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Input */
+
+.input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border: none;
+  outline: none;
+  color: #777474;
+  font-size: 0.7rem;
+}
+
+.input-container {
+  position: relative;
+}
+
+.placeholder {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+  transform-origin: left;
+}
+
+.line-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: visible;
+}
+
+.checkbox-label {
+  font-size: 0.9rem;
+  padding: 0 2rem;
+}
+
+.promo-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container {
+  position: relative;
+  height: 1.2rem;
+  width: 1.2rem;
+  overflow: hidden;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.checkbox {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark,
+.checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #c5c5c5;
+}
+
+.checkbox-fill {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background: #6190e8;
+}
+
+.tick-mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+  -moz-transform: translate(-50%, -50%) scale(0.5);
+  -ms-transform: translate(-50%, -50%) scale(0.5);
+  -o-transform: translate(-50%, -50%) scale(0.5);
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 0.5rem 2.5rem;
+  cursor: pointer;
+  align-self: start;
+  background: #6190e8;
+  border: none;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}

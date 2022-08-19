@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Anime</title>
+  </head>
+  <body>
+    <form>
+      <!-- Left Side of the Form -->
+      <div class="contact-left">
+        <h1 class="title">Contact Us</h1>
+        <p class="description">
+          Let's stay in touch <br />
+          For more information <br />
+          Sign up.
+        </p>
+      </div>
+      <!-- Right Side of the Form -->
+      <div class="contact-right">
+        <div class="input-container">
+          <p class="placeholder">Your Name</p>
+          <input type="text" autocomplete="off" class="input-name input" />
+          <svg
+            class="line-svg"
+            width="300"
+            height="2"
+            viewBox="0 0 300 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="elastic-line"
+              d="M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512"
+              stroke="#D1D4DA"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+        <div class="input-container">
+          <p class="placeholder">Your Email</p>
+          <input type="email" autocomplete="off" class="input-email input" />
+          <svg
+            class="line-svg"
+            width="300"
+            height="2"
+            viewBox="0 0 300 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="elastic-line"
+              d="M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512"
+              stroke="#D1D4DA"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+        <div class="input-container">
+          <p class="placeholder">Your Phone Number</p>
+          <input type="tel" autocomplete="off" class="input-number input" />
+          <svg
+            class="line-svg"
+            width="300"
+            height="2"
+            viewBox="0 0 300 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="elastic-line"
+              d="M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512"
+              stroke="#D1D4DA"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+        <div class="promo-container">
+          <div class="checkbox-container">
+            <span class="checkmark"></span>
+            <div class="checkbox-fill"></div>
+            <input type="checkbox" class="checkbox" />
+            <svg
+              width="19"
+              height="16"
+              viewBox="0 0 19 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="tick-mark"
+            >
+              <path
+                class="elastic-line"
+                d="M2 8.5L6.5 13L17.5 2"
+                stroke="white"
+                stroke-width="4"
+              />
+            </svg>
+          </div>
+          <label class="checkbox-label">Send me promotions and offers.</label>
+        </div>
+        <button>Join us</button>
+      </div>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
