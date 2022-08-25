@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(260deg, #b75d62, #754d4f);
+}
+
+/* Showcase */
+.showcase {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90vh;
+  padding: 0rem 15% 0rem 15%;
+  overflow: hidden;
+}
+
+.showcase-text {
+  color: white;
+  flex: 1;
+  padding-bottom: 10rem;
+}
+
+.showcase-title {
+  font-size: 3rem;
+}
+
+.showcase-subtitle {
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 3rem 0;
+}
+
+.showcase-button {
+  padding: 0.5rem 2rem;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  font-weight: 500;
+  color: #000;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.showcase-arrow {
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+  transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+}
+/* Navbar */
+
+nav {
+  min-height: 10vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 10%;
+}
+
+nav img {
+  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 80vh;
+  z-index: 2;
+  flex: 1;
+}
+
+.img-container img {
+  width: 80%;
+}
+
+.logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Bubbles */
+
+.circle {
+  position: absolute;
+}
+
+.circle-1 {
+  left: -3%;
+  bottom: -3%;
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+}
+
+.circle-2 {
+  left: 35%;
+  bottom: 10%;
+}
+
+.circle-3 {
+  left: 20%;
+  top: 15%;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+
+/* Product Page */
+
+.product-section {
+  background-color: #fff;
+  overflow: hidden;
+  min-height: 90vh;
+  position: absolute;
+  width: 100vw;
+  z-index: 5;
+}
+
+.product-description {
+  padding: 5% 15%;
+  overflow: hidden;
+  color: #4b4b4b;
+}
+
+.product-description h2 {
+  font-size: 2rem;
+  font-weight: bold;
+
+  padding-bottom: 1rem;
+}
+
+.product-description p {
+  font-size: 1rem;
+  font-weight: normal;
+  padding-bottom: 1rem;
+}
+
+.product-gallery {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  padding: 0% 15%;
+}
+
+/* background-color: #f00; */
+.card {
+}
+
+.product-img {
+  width: 100%;
+  min-height: 500px;
+  object-fit: contain;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Page Transition</title>
+  </head>
+  <body data-barba="wrapper">
+    <nav>
+      <img src="./images/burger.svg" alt="Burger Menu" />
+      <a href="./index.html" class="logo">Usman ed.</a>
+      <img
+        src="./images/shopping-cart.svg"
+        alt="shopping-cart"
+        class="shopping-bag"
+      />
+    </nav>
+    <div
+      class="product-section"
+      data-barba="container"
+      data-barba-namespace="product"
+    >
+      <div class="product-description">
+        <h2>Shop Our Signature.</h2>
+        <p>
+          Your shortcut to sophistication. Our Signature never go out of style
+        </p>
+      </div>
+      <div class="product-gallery">
+        <div class="card">
+          <img
+            src="./images/blackcard.png"
+            alt="blackcard"
+            class="product-img"
+          />
+          <h3>Leisara</h3>
+          <p>black leather</p>
+          <div class="price">
+            <h4>$300</h4>
+            <img
+              src="./images/product-cart.svg"
+              alt="Add to cart"
+              class="product-cart"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./images/bluecard.png"
+            alt="blackcard"
+            class="product-img"
+          />
+          <h3>Leisara</h3>
+          <p>black leather</p>
+          <div class="price">
+            <h4>$300</h4>
+            <img
+              src="./images/product-cart.svg"
+              alt="Add to cart"
+              class="product-cart"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/tancard.png" alt="blackcard" class="product-img" />
+          <h3>Leisara</h3>
+          <p>black leather</p>
+          <div class="price">
+            <h4>$300</h4>
+            <img
+              src="./images/product-cart.svg"
+              alt="Add to cart"
+              class="product-cart"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./images/yellowcard.png"
+            alt="blackcard"
+            class="product-img"
+          />
+          <h3>Leisara</h3>
+          <p>black leather</p>
+          <div class="price">
+            <h4>$300</h4>
+            <img
+              src="./images/product-cart.svg"
+              alt="Add to cart"
+              class="product-cart"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./images/frontpage-boot.png"
+            alt="blackcard"
+            class="product-img"
+          />
+          <h3>Leisara</h3>
+          <p>black leather</p>
+          <div class="price">
+            <h4>$300</h4>
+            <img
+              src="./images/product-cart.svg"
+              alt="Add to cart"
+              class="product-cart"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./images/frontpage-handbag.png"
+            alt="blackcard"
+            class="product-img"
+          />
+          <h3>Leisara</h3>
+          <p>black leather</p>
+          <div class="price">
+            <h4>$300</h4>
+            <img
+              src="./images/product-cart.svg"
+              alt="Add to cart"
+              class="product-cart"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- unpkg -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
