@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a,
+button,
+h1,
+h2,
+h3,
+h4,
+span {
+  color: #222;
+}
+
+/* Navbar */
+
+nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20%;
+  min-height: 7vh;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+nav,
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+}
+
+.nav-links a,
+.nav-links button {
+  margin-left: 2rem;
+}
+
+.logo {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.buy-button {
+  padding: 0.3rem 2rem;
+  font-size: 0.6rem;
+  border: none;
+  background-color: #3056f5;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+}
+
+/* First Page */
+.first-page {
+  min-height: 100vh;
+  /* width: 100vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20%;
+  padding-bottom: 10rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.first-page-text {
+  z-index: 2;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+.first-page-title {
+  font-size: 1.5rem;
+}
+
+.first-page-subtitle {
+  font-size: 3rem;
+}
+
+.intro-video {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  width: 100vw;
+  height: 100%;
+}
+
+/* Second Page */
+
+.second-page {
+  margin-top: 0.1rem;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.smoke-video {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.text-container {
+  z-index: 2;
+  position: relative;
+  color: #fff;
+  padding: 5% 30%;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.text-container span {
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.text-container span:hover {
+  color: #fff;
+}
